@@ -42,7 +42,7 @@ export default function AddProduct() {
 
 	function addProduct(e) {
 
-		fetch(`http://localhost:4000/products/`, {
+		fetch(`https://capstone-2-lansangan-edward.onrender.com/products/`, {
 			method: "POST",
 			headers: {
 				"Content-Type": "application/json",

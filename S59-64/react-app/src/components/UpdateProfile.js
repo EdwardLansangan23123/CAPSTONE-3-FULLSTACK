@@ -22,7 +22,7 @@ export default function UpdateProfile() {
   };
 
   const setId = (userId) => {
-    fetch(`http://localhost:4000/users/${userId}`, {
+    fetch(`https://capstone-2-lansangan-edward.onrender.com/users/${userId}`, {
       method: 'PATCH',
       headers: {
         'Content-Type': 'application/json',
@@ -64,7 +64,7 @@ export default function UpdateProfile() {
   }, [firstName, lastName, email, mobileNo]);
 
   useEffect(() => {
-    fetch(`http://localhost:4000/users/details`, {
+    fetch(`https://capstone-2-lansangan-edward.onrender.com/users/details`, {
       headers: {
         Authorization: `Bearer ${localStorage.getItem('token')}`,
       },

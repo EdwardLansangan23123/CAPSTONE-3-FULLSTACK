@@ -14,7 +14,7 @@ export default function ProductView({ product }) {
   const { name, description, price, _id } = product;
 
   const checkout = (productId, quantity) => {
-    fetch('http://localhost:4000/users/order-a-product', {
+    fetch('https://capstone-2-lansangan-edward.onrender.com/users/order-a-product', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -50,7 +50,7 @@ export default function ProductView({ product }) {
   useEffect(() => {
     console.log(_id);
 
-    fetch(`http://localhost:4000/products/${_id}`)
+    fetch(`https://capstone-2-lansangan-edward.onrender.com/products/${_id}`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data);

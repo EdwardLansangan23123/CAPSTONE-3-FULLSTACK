@@ -9,7 +9,7 @@ export default function Products() {
   const [products, setProducts] = useState([]);
 
 useEffect(() => {
-  fetch('http://localhost:4000/products/all-products')
+  fetch('https://capstone-2-lansangan-edward.onrender.com/products/all-products')
     .then(res => res.json())
     .then(data => {
       // Filter the products array based on isActive property

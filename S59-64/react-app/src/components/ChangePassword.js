@@ -21,7 +21,7 @@ export default function ChangePassword() {
 	};
 
 	const setId = (userId) => {
-		fetch(`http://localhost:4000/users/changePassword/${userId}`, {
+		fetch(`https://capstone-2-lansangan-edward.onrender.com/users/changePassword/${userId}`, {
 			method: "PUT",
 			headers: {
 				"Content-Type": "application/json",

@@ -27,7 +27,7 @@ export default function Register () {
     // prevents page redirection via form submission
     e.preventDefault()
 
-    fetch('http://localhost:4000/users/checkEmail', {
+    fetch('https://capstone-2-lansangan-edward.onrender.com/users/checkEmail', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -44,7 +44,7 @@ export default function Register () {
         });
         
       } else {
-      fetch('http://localhost:4000/users/register', {
+      fetch('https://capstone-2-lansangan-edward.onrender.com/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

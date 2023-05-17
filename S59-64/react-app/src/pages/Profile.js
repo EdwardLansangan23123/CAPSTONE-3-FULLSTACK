@@ -45,7 +45,7 @@ export default function Profile() {
 
 // [GET USER PROFILE]
 	useEffect(() => {
-		fetch(`http://localhost:4000/users/details`, {
+		fetch(`https://capstone-2-lansangan-edward.onrender.com/users/details`, {
 			headers: {
 				Authorization: `Bearer ${localStorage.getItem('token')}`,
 			},
@@ -70,7 +70,7 @@ export default function Profile() {
 	},[]);//user
 
 	useEffect(() => {
-		fetch('http://localhost:4000/users/all', {
+		fetch('https://capstone-2-lansangan-edward.onrender.com/users/all', {
 			headers: {
 				Authorization: `Bearer ${localStorage.getItem('token')}`,
 			},
@@ -86,7 +86,7 @@ export default function Profile() {
 
 // [SET AS ADMIN]
 	const setAsAdmin = (userId, userName) => {
-		fetch(`http://localhost:4000/users/change-to-admin/${userId}`, {
+		fetch(`https://capstone-2-lansangan-edward.onrender.com/users/change-to-admin/${userId}`, {
 			method: "PUT",
 			headers: {
 				"Content-Type": "application/json",
@@ -120,7 +120,7 @@ export default function Profile() {
 
 // [REMOVE AS ADMIN]
 	const removeAsAdmin = (userId, userName) => {
-		fetch(`http://localhost:4000/users/remove-as-admin/${userId}`, {
+		fetch(`https://capstone-2-lansangan-edward.onrender.com/users/remove-as-admin/${userId}`, {
 			method: "PUT",
 			headers: {
 				"Content-Type": "application/json",
@@ -154,7 +154,7 @@ export default function Profile() {
 
 // [CANCEL ORDER]
 const cancelOrder = (userId, orderId) => {
-  fetch(`http://localhost:4000/users/cancel-order/${userId}/${orderId}`, {
+  fetch(`https://capstone-2-lansangan-edward.onrender.com/users/cancel-order/${userId}/${orderId}`, {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
@@ -195,7 +195,7 @@ const cancelOrder = (userId, orderId) => {
 
 // [CHANGE QUANTITY]
 	const setId = (userId) => {
-		fetch(`http://localhost:4000/users/change-quantity/${userId}/${orderId}/${productId}`, {
+		fetch(`https://capstone-2-lansangan-edward.onrender.com/users/change-quantity/${userId}/${orderId}/${productId}`, {
 			method: "PUT",
 			headers: {
 				"Content-Type": "application/json",

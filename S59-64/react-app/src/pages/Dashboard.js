@@ -52,7 +52,7 @@ export default function Dashboard(){
 // [ALL PRODUCTS LIST]
 	const fetchData = () =>{
 
-		fetch(`http://localhost:4000/products/all-products`,{
+		fetch(`https://capstone-2-lansangan-edward.onrender.com/products/all-products`,{
 			headers:{
 				"Authorization": `Bearer ${localStorage.getItem("token")}`
 			}
@@ -92,7 +92,7 @@ export default function Dashboard(){
 // [HIDE PRODUCT]
 	const archive = (productId, productName) => {
 
-		fetch(`http://localhost:4000/products/hide/${productId}`,{
+		fetch(`https://capstone-2-lansangan-edward.onrender.com/products/hide/${productId}`,{
 			method: "PUT",
 			headers:{
 				"Content-Type": "application/json",
@@ -125,7 +125,7 @@ export default function Dashboard(){
 // [ACTIVATE PRODUCT]
 			const unarchive = (productId, productName) =>{
 
-				fetch(`http://localhost:4000/products/activate/${productId}`,{
+				fetch(`https://capstone-2-lansangan-edward.onrender.com/products/activate/${productId}`,{
 					method: "PUT",
 					headers:{
 						"Content-Type": "application/json",
@@ -179,7 +179,7 @@ export default function Dashboard(){
 					body.image = null;
 				};
 
-				fetch(`http://localhost:4000/products/${productId}`, {
+				fetch(`https://capstone-2-lansangan-edward.onrender.com/products/${productId}`, {
 					method: "PUT",
 					headers: {
 						"Content-Type": "application/json",
@@ -213,7 +213,7 @@ export default function Dashboard(){
 			};
 
 			const productPreview = (productId) => {
-				fetch(`http://localhost:4000/products/${productId}`) .then(res => res.json())
+				fetch(`https://capstone-2-lansangan-edward.onrender.com/products/${productId}`) .then(res => res.json())
 				.then(data => {
 					setEditId(productId)
 					setName(data.name);

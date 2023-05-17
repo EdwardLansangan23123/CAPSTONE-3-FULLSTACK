@@ -10,7 +10,7 @@ export default function TotalSpent() {
   const [show, setShow] = useState(false);
 
   const showTotalSpent = () => {
-    fetch('http://localhost:4000/users/totalAmount', {
+    fetch('https://capstone-2-lansangan-edward.onrender.com/users/totalAmount', {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',

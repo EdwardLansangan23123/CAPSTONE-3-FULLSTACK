@@ -5,7 +5,7 @@ export default function Orders() {
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
-    fetch('http://localhost:4000/products/all-products')
+    fetch('https://capstone-2-lansangan-edward.onrender.com/products/all-products')
       .then(res => res.json())
       .then(data => {
         setOrders(data);

@@ -13,7 +13,7 @@ export default function SpecificProduct() {
   const { productId } = useParams();
 
   useEffect(() => {
-    fetch(`http://localhost:4000/products/${productId}`, {
+    fetch(`https://capstone-2-lansangan-edward.onrender.com/products/${productId}`, {
       method: 'GET',
       headers: {
         Authorization: `Bearer ${localStorage.getItem('token')}`,

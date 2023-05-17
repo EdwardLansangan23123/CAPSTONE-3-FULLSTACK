@@ -23,7 +23,7 @@ export default function Login() {
   function authenticate(e) {
     e.preventDefault();
 
-    fetch('http://localhost:4000/users/login', {
+    fetch('https://capstone-2-lansangan-edward.onrender.com/users/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -66,7 +66,7 @@ export default function Login() {
   }
 
   const retrieveUserDetails = token => {
-    return fetch('http://localhost:4000/users/details', {
+    return fetch('https://capstone-2-lansangan-edward.onrender.com/users/details', {
       headers: {
         Authorization: `Bearer ${token}`,
       },

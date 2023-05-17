@@ -39,7 +39,7 @@ useEffect(() => {
   if (!token) {
     return;
   }
-  fetch("http://localhost:4000/users/details", {
+  fetch("https://capstone-2-lansangan-edward.onrender.com/users/details", {
     headers: {
       Authorization: `Bearer ${token}`
     }
