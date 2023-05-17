@@ -44,7 +44,7 @@ export default function Register () {
         });
         
       } else {
-      fetch('https://capstone-2-lansangan-edward.onrender.com/register', {
+      fetch('https://capstone-2-lansangan-edward.onrender.com/users/register', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
